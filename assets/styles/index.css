@@ -50,6 +50,13 @@ header nav {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 680px) {
+  header nav {
+    -ms-grid-columns: 50% 10% 40%;
+        grid-template-columns: 50% 10% 40%;
+  }
+}
+
 header nav .logo {
   font-family: Allura, cursive;
   font-weight: 100;
@@ -69,6 +76,12 @@ header nav ul {
   text-transform: uppercase;
   font-size: .7rem;
   padding: 0 30px;
+}
+
+@media screen and (max-width: 680px) {
+  header nav ul {
+    visibility: hidden;
+  }
 }
 
 header nav ul li {
@@ -131,6 +144,13 @@ header .header-text div h1 {
   font-family: Poppins, serif;
 }
 
+@media screen and (max-width: 680px) {
+  header .header-text div h1 {
+    font-size: 2rem;
+    margin-top: -15px;
+  }
+}
+
 header .header-text div img {
   height: 27px;
   margin: 32px 0;
@@ -148,6 +168,13 @@ header .header-text div h6 {
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
   background: #eee;
+}
+
+@media screen and (max-width: 680px) {
+  .section1 {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 
 .section1 .intro-text {
@@ -192,6 +219,12 @@ header .header-text div h6 {
   background: url(../img/store-01.jpg) center/cover;
 }
 
+@media screen and (max-width: 680px) {
+  .section1 .intro-pic {
+    display: none;
+  }
+}
+
 .section2 {
   color: #eee;
   padding-bottom: 100px;
@@ -232,6 +265,14 @@ header .header-text div h6 {
   min-width: 500px;
 }
 
+@media screen and (max-width: 680px) {
+  .section2 ul {
+    min-width: 200px;
+    width: 90%;
+    font-size: .75rem;
+  }
+}
+
 .section2 ul li {
   border-bottom: 1px solid #b6b6b6;
   padding-bottom: 8px;
@@ -251,6 +292,13 @@ header .header-text div h6 {
       grid-template-columns: 50% 50%;
   z-index: 1000;
   position: relative;
+}
+
+@media screen and (max-width: 680px) {
+  .section2 .meals {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 
 .section2 .meals .meal {
@@ -321,6 +369,13 @@ header .header-text div h6 {
   background: #eee;
   max-width: 1050px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 850px) {
+  .section3 .form-content {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 
 .section3 .form-content .hours {
@@ -404,6 +459,13 @@ header .header-text div h6 {
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 680px) {
+  .section3 .form-content .form-infos .form-inputs {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 .section3 .form-content .form-infos .form-inputs > * {
   padding: 10px 0;
   margin: 10px;
@@ -435,6 +497,12 @@ header .header-text div h6 {
 
 .section4 {
   padding: 50px 20px 90px;
+}
+
+@media screen and (max-width: 680px) {
+  .section4 {
+    display: none;
+  }
 }
 
 .section4 .events-container {
@@ -673,6 +741,12 @@ footer {
   color: #eee;
 }
 
+@media screen and (max-width: 680px) {
+  footer {
+    background: none;
+  }
+}
+
 footer .footer-content {
   max-width: 1000px;
   margin: 0 auto;
@@ -682,9 +756,22 @@ footer .footer-content {
       grid-template-columns: 50% 50%;
 }
 
+@media screen and (max-width: 680px) {
+  footer .footer-content {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 footer .footer-content .left-part {
   padding-right: 30px;
   line-height: 30px;
+}
+
+@media screen and (max-width: 680px) {
+  footer .footer-content .left-part {
+    display: none;
+  }
 }
 
 footer .footer-content .left-part h2 {
@@ -708,6 +795,12 @@ footer .footer-content .right-part {
       grid-template-rows: 1fr 1fr;
 }
 
+@media screen and (max-width: 680px) {
+  footer .footer-content .right-part {
+    padding-left: 20px;
+  }
+}
+
 footer .footer-content .right-part h3 {
   font-size: .85rem;
 }
@@ -720,11 +813,23 @@ footer .footer-content .right-part input {
   width: 250px;
 }
 
+@media screen and (max-width: 680px) {
+  footer .footer-content .right-part input {
+    width: 150px;
+  }
+}
+
 footer .footer-content .right-part .follow-us {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 50px;
+}
+
+@media screen and (max-width: 680px) {
+  footer .footer-content .right-part .follow-us h3 {
+    display: none;
+  }
 }
 
 footer .footer-content .right-part .follow-us ul {
